@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import MacroscopicInteractionGravitationalFieldMatterFoundationCanonicalLaneLean.BridgeLemmas
+import MacroscopicInteractionGravitationalFieldMatterFoundationCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace MacroscopicInteractionGravitationalFieldMatterFoundationCanonicalLaneLean
+
+def ConstrainedMacroscopicInteractionClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_macroscopic_interaction_endgame (A : AdmissibleClass) :
+    ConstrainedMacroscopicInteractionClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MacroscopicInteractionGravitationalFieldMatterFoundationCanonicalLaneLean
+end HautevilleHouse
